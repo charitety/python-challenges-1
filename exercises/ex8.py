@@ -3,8 +3,14 @@
 # and returns the name of the oldest student.
 
 def find_oldest_student(students):
-    # Your code here
-    pass
+    # Using a build-in method
+    # return (max(students))
+    oldest = 0
+    for student in students:
+        if student.value() > oldest:
+            oldest = student.value
+
+
 
 
 # Test the function

@@ -3,9 +3,11 @@
 # containing only the strings that start with an uppercase letter.
 
 def filter_uppercase_strings(strings):
-    # Your code here
-    pass
-
+    newList = []
+    for element in strings:
+        if element[0].isupper():
+            newList.append(element)
+    return tuple(newList)
 
 # Test the function
 strings = ("Apple", "banana", "Cat", "dog", "Elephant", "Frog")

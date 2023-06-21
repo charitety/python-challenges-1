@@ -4,7 +4,14 @@
 
 def find_intersection(set1, set2):
     # Your code here
-    pass
+    # Using build-in methods:
+    # newSet = set1.intersection(set2)
+    # return newSet
+    newSet = []
+    for i in set1:
+        if i in set2:
+            newSet.append(i)
+    return set(newSet)
 
 
 # Test the function
@@ -21,7 +28,15 @@ print(find_intersection(set1, set2))  # Expected output: {4, 5}
 
 def merge_sets(set1, set2):
     # Your code here
-    pass
+    # Using built-in methods:
+    # newSet = set1.union(set2)
+    # return newSet
+
+    newSet2 = list(set1)
+    for i in set2:
+        if i not in set1:
+            newSet2.append(i)
+    return set(newSet2)
 
 
 # Test the function
